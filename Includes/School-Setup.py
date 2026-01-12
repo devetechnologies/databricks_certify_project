@@ -1,6 +1,7 @@
 # Databricks notebook source
 # MAGIC %sql
 # MAGIC USE CATALOG hive_metastore
+# MAGIC --USE CATALOG hive_metastore
 
 # COMMAND ----------
 
@@ -10,7 +11,8 @@ checkpoint_path = 'dbfs:/mnt/DEA-Book/checkpoints'
 dlt_path = 'dbfs:/mnt/DEA-Book/dlt'
 db_name = 'DE_Associate_School'
 dlt_db_name = 'school_dlt_db'
-spark.conf.set(f"dataset.school", dataset_school)
+#spark.conf.set(f"dataset.school", dataset_school)
+#spark.conf.set(f"school.dataset_path", dataset_school)
 
 # COMMAND ----------
 
